@@ -1,0 +1,39 @@
+import React from 'react'
+import './App.css'
+import Hero from './components/Hero/Hero'
+import Header from './components/Header/Header'
+import Companies from './components/Companies/Companies'
+import Residencies from './components/Residencies/Residencies'
+import Value from './components/Value/Value'
+import Contact from './components/Contact/Contact'
+import GetStarted from './components/GetStarted/GetStarted'
+import Footer from './components/Footer/Footer'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+
+
+function App() {
+  React.useEffect(() => {
+    AOS.init()
+  }, [])
+  return (
+    <>
+      <div className="App">
+        <div>
+          <div className="white-gradiaent" />
+          <Header></Header>
+          <Hero></Hero>
+        </div>
+        <Companies />
+        <Residencies />
+        <Value />
+        <Contact />
+        <GetStarted />
+        <Footer />
+      </div>
+    </>
+  )
+}
+
+export default App

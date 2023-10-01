@@ -1,0 +1,23 @@
+.s-container {
+    width: 95%;
+    margin: auto;
+    background: var(--blue);
+    text-align: center;
+    gap: 1.4rem;
+    border-radius: 1.7rem;
+    border: 4px solid  rgb(110, 110, 255);
+}
+
+.s-container span:first-child {
+    color: #eeeffe;
+}
+
+.s-container span:nth-child(2) {
+    color: #eeeffec3;
+}
+
+
+.s-container button {
+    background: #eeeffe41;
+    border: 1px solid #eeeffe;
+}

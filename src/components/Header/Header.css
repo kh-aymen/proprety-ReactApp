@@ -1,0 +1,48 @@
+.h-wrapper {
+    color: white;
+}
+
+.h-container {
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.h-menu,
+.h-menu-respo {
+    gap: 2rem;
+}
+
+.h-menu>a:hover,
+.h-menu-respo>a:hover {
+    color: rgb(130, 130, 255);
+}
+
+.h-menu-respo {
+    padding: 1rem 2rem;
+    transition: all ease-in 300ms;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 19px;
+    padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+    color: white;
+    background: var(--blue-gradient);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: all 250ms ease-in;
+    display: none;
+}
+
+@media screen and (max-width:820px) {
+    .btn {
+        display: block;
+    }
+
+    .h-menu {
+        display: none;
+    }
+}
